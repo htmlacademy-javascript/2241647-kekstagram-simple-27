@@ -10,15 +10,15 @@ function getRandomNumber (min, max) {
     max >= 0
   ) {
     if (min > max) {
-      let flip = min;
+      const FLIP = min;
       min = max;
-      max = flip;
+      max = FLIP;
     }
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
-  return NaN
+  return NaN;
 }
 
 
@@ -29,3 +29,6 @@ function getRandomNumber (min, max) {
 function checkStringLength (string, maxLength) {
   return string.length <= maxLength;
 }
+
+getRandomNumber(3,2);
+checkStringLength('Функция для проверки максимальной длины строки.',30);
