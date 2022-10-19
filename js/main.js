@@ -6,7 +6,7 @@ function getRandomNumber (min, max) {
   if (
     Number.isInteger(min) &&
     Number.isInteger(max) &&
-    min >=0 &&
+    min >= 0 &&
     max >= 0
   ) {
     if (min > max) {
